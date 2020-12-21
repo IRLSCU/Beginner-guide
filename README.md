@@ -41,6 +41,7 @@ IRLSCU 是Indoor Robot Laboratory of Sichuan University；主要研究方向室�
 * [ ] STL 源码剖析（侯捷 著）
 * [ ] 深度探索C++对象模型（侯捷 译）
 * [ ] Effective C++（侯捷 译）
+* [ ] [Effective Modern C++](https://github.com/kelthuzadx/EffectiveModernCppChinese)
 * [ ] C++ 发展与演进
 * [ ] C++ 模板编程
 * [ ] C++ 高级编程
@@ -137,13 +138,15 @@ TODO
 #### 3.3.2 深度感知(雷达/深度相机)
 TODO
 
-#### 3.3.3 障碍物感知
+#### 3.3.3 障碍物检测
 TODO
 
 ### 3.4 决策
 
 #### 3.4.1 路径规划
+TODO
 
+#### 3.4.2 多车协同
 TODO
 
 ### 3.5 计算
@@ -155,29 +158,64 @@ TODO
 ### 3.6.3 分布式计算
 TODO
 
+
 ## 4. 任务与挑战
 
 ### 4.1 必读内容
 - 基础知识
   - 数据结构:算法(第四版)
-  - 设计模式: 
+  - 设计模式: [C++23种设计模式](https://github.com/shihyu/DesignPatternExample/blob/master/GoF%2023%E7%A8%AE%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F%E8%A7%A3%E6%9E%90%E9%99%84C%2B%2B%E5%AF%A6%E7%8F%BE%E6%BA%90%E7%A2%BC.pdf)
+  - CSAPP(深入理解计算机系统)
 - Linux基本操作
   - 鸟哥的Linux私房菜(见百度网盘书籍库)
   - [Linux命令行与shell脚本编程大全案例](https://github.com/fengyuhetao/shell)
   - [linux-command](https://github.com/jaywcjlove/linux-command)
 - C/C++ (均可见百度网盘书籍库)
   - [官方文档](https://zh.cppreference.com/) 
-  - C++ primer 第五版
+  - C++ primer 第五版（建议快速阅读，然后当字典用）
   - STL 源码剖析（侯捷 著）
   - Effective C++
-  - C++ 多核编程
-- Python
-  - Python 高级编程(上/下)
-- Makefile/CMake/git/doc
+  - 深入理解并行编程
+- Makefile/CMake/git/docs
   - 跟我一起学Makefile
   - CMake编程指南
-  - 廖雪峰git教程
+  - [廖雪峰git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
   - [编码规范和docs](https://github.com/IRLSCU/uranus-core/blob/main/docs/contributor.md)
 - ROS编程
   - ROS 入门实例
+  - ROS 高级编程
+- Python
+  - Python 高级编程(上/下)
+- Linux
+  - Linux/UNIX系统编程手册（上下册） (快速浏览)
+### 4.2 作业
 
+#### 4.2.1 博客搭建和笔记记录
+搭建个人博客
+- 要求:
+  - 使用GitHub搭建个人学习笔记博客;
+  - 将博客连接添加到本页末尾的成员博客列表中；
+- 任务目标：
+  - 学习git项目创建、更新等基本操作
+  - Markdown编写
+  - 使用博客记录，读书和学习笔记。
+- 参考:[Dress](https://github.com/komeiji-satori/Dress)
+
+#### 4.2.2 提交问题
+
+创建个人分支，添加个人项目文件夹:
+- 要求:
+  - 1. 按照[编码规范和docs](https://github.com/IRLSCU/uranus-core/blob/main/docs/contributor.md)进行个人分支创建和代码合并。
+  - 2. 在本项目的各个problemX\solution 中创建以自姓名为缩写的文件夹。例如王鹏程，则创建文件夹wpc
+  - 3. 创建项目必须是完整的C++项目。包含cmake文件，并提供build、run、test三种shell脚本，实现快速运行。
+  - 4. 项目中必须包含docs,文件和注释文档生成脚本，快速生成代码文档，说明代码作用和API.
+- 任务目标：
+  - 1. 熟悉Makefile/CMake相关编译套件
+  - 2. 熟悉git分支操作和shell编程
+  - 3. 熟悉doxygen注释生成
+
+
+#### 4.2.3 任务挑战
+1. 消息解析
+2. UDP实时传输消息
+3. ROS虚拟驱动
