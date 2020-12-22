@@ -208,14 +208,16 @@ TODO
   - 1. 按照[编码规范和docs](https://github.com/IRLSCU/uranus-core/blob/main/docs/contributor.md)进行个人分支创建和代码合并。
   - 2. 在本项目的各个problemX\solution 中创建以自姓名为缩写的文件夹。例如王鹏程，则创建文件夹wpc
   - 3. 创建项目必须是完整的C++项目。包含cmake文件，并提供build、run、test三种shell脚本，实现快速运行。
-  - 4. 项目中必须包含docs,文件和注释文档生成脚本，快速生成代码文档，说明代码作用和API.
+  - 4. 项目中必须包含docs,文件和注释文档生成脚本`build_doc.sh`(可以使用cmake来配置)，快速生成代码文档，说明代码作用和API.
 - 任务目标：
   - 1. 熟悉Makefile/CMake相关编译套件
   - 2. 熟悉git分支操作和shell编程
-  - 3. 熟悉doxygen注释生成
+  - 3. 熟悉doxygen语法
 
 
 #### 4.2.3 任务挑战
-1. 消息解析
-2. UDP实时传输消息
-3. ROS虚拟驱动
+1. RPC消息解析
+2. 高性能负载均衡服务器
+3. C++ 实现动静态反射
+4. UDP实时传输消息
+5. 基于ROS的多机器人导航编队仿真
