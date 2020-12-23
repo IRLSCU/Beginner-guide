@@ -57,7 +57,7 @@
    {
        int32 id;
        string name;
-   }pet;
+   } pet;
    string name;
 }
 ```
@@ -77,7 +77,7 @@ pet字段就是一个组合类型，它里面包含了id和name字段。
            } skill;
        }pet;
        uint16 level;
-    }player;
+    } player;
 }
 ```
 组合类型player中除了包含name、id、level基本类型定义的字段，
@@ -132,6 +132,7 @@ f的结果为'01'，故总的序列化结果为'050068656c6c6f03000c004000010400
 
 
 ## 简单测试用例
+测试用例1:
 
 ```c++
 {
@@ -139,13 +140,33 @@ f的结果为'01'，故总的序列化结果为'050068656c6c6f03000c004000010400
    int32 id;        
    bool married;    
    int32[] friends;
-   float[3]position;
+   float[3] position;
    {
      string name;
      {
         uint16 id;   
-     }[2]skill;
-   }pet;
-   
+     }[2] skill;
+   } pet;
+}
+```
+序列化数据传输实例:
+```json
+{
+	"name": "测试数据",
+	"id": 5201314,
+	"married": False,
+	"friends": (5201315, 244578811),
+	"position": (134.5, 0.0, 23.41),
+	"pet": {
+		"name": "测试pet名称",
+		"skill":(
+			{
+				"id": 1,
+			},
+			{
+				"id": 2,
+			}
+        )
+	}
 }
 ```
