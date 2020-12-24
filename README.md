@@ -117,6 +117,7 @@ IRLSCU 是Indoor Robot Laboratory of Sichuan University；主要研究方向室�
 * git:
   * [ ] [git官方文档](https://git-scm.com/doc)
   * [ ] [廖雪峰git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+* doxygen 
   * [ ] [doxygen文档](https://www.doxygen.nl/manual/index.html)
 
 ## 3. 研究方向和分支引导
@@ -209,7 +210,7 @@ TODO
 C++实现简单按proto解析，实现协议解析和序列化方法:
 常用双端通信需要基于事先制定的通信协议。协议当中会约定双端如何进行数据的序列化和反序列化，即发送端如何把具有一定结构的对象转换为有序字节流，接收端如何从中反序列化得到原始对象。业界流行的方法有json、msgpack、protobuf等。而现在，我们自定义了一种协议描述文本来完成该功能。
 
-详情请见:[RPC消息解析](./problem/problem_01/README.md)
+详情请见:[RPC消息解析](https://github.com/IRLSCU/Beginner-guide/blob/master/problem/problem_01/README.md)
 
 要求：
 1. 简单的文本语法解析。
@@ -227,9 +228,9 @@ C++实现简单按proto解析，实现协议解析和序列化方法:
 ####  2. 高性能HTTP服务器
 
 C++实现类似nginx的简单HTTP服务器，使用reactor或者Preactor模式实现高性能的网络消息处理分发。
-HTTP通信是网络通信中的重要内容，主要是来承载所有的网络请求并支持；对其进行分发操作。主要是进行网络消息的转发处理；是消息处理的关键内容；为了尽可能高的提高并发量，现有的业界流行解决方法有:Boost.Asio、libevent2、muduo、evcpp等。现在我们需要自己开发一款软件来实现这个功能:
+HTTP通信是网络通信中的重要内容，主要是来承载所有的网络请求并支持；对其进行分发操作。主要是进行网络消息的转发处理；是消息处理的关键内容；为了尽可能高的提高并发量，现有的业界流行解决方法有:[Boost.Asio](https://www.boost.org/doc/libs/1_64_0/doc/html/boost_asio.html)、[libevent2](https://libevent.org/)、[muduo](https://github.com/chenshuo/muduo)等。现在我们需要自己开发一款软件来实现这个功能:
 
-详情请见:[高性能HTTP服务器](./problem/problem_02/README.md)
+详情请见:[高性能HTTP服务器](https://github.com/IRLSCU/Beginner-guide/blob/master/problem/problem_02/README.md)
 
 要求:
 1. 实现HTTP的服务器。
@@ -253,7 +254,7 @@ HTTP通信是网络通信中的重要内容，主要是来承载所有的网络�
 
 C++作为语言中的重要特性就是模板，但是反射支持的困难也就在于此，可以通过模板的方式，来实现静态反射，但是造成的问题是编译期间生成中间代码太多，程序臃肿。此时需要动态反射作为补充，因此聪明如你，需要同时支持动态和静态反射。
 
-详情请见:[动静态反射说明](./problem/problem_03/README.md)
+详情请见:[动静态反射说明](https://github.com/IRLSCU/Beginner-guide/blob/master/problem/problem_03/README.md)
 
 要求；
 1. 实现反射的基本功能
@@ -296,7 +297,7 @@ ROS系统作为，现在实验室实验和算法研究的主要功能系统，�
 
 gazebo作为ROS中重要的仿真模拟环境，以其为基础的多机器人的编队以及rviz中实现多机器人仿真尤为重要。需要解决ROS中的模拟多车协同仿真，聪明如你一定很快就想到了解决方案。快来行动吧。
 
-详情请见:[基于ROS的多机器人导航编队仿真](./problem/problem_04/README.md)
+详情请见:[基于ROS的多机器人导航编队仿真](https://github.com/IRLSCU/Beginner-guide/blob/master/problem/problem_05/README.md)
 
 要求；
 1. 实现rivz的多车协同仿真模拟。
@@ -336,10 +337,11 @@ gazebo作为ROS中重要的仿真模拟环境，以其为基础的多机器人�
 
 研读自己对应方向的论文35篇(国外文献至少15篇)，并做出对应笔记，放入对应的problem文件夹中。笔记模板如下:
 
-[笔记模板](./problem/problem_07/thesis_reading_template.md)
+[笔记模板](https://github.com/IRLSCU/Beginner-guide/blob/master/problem/problem_07/thesis_reading_template.md)
 
 #### 4.2.3 问题提交注意
 
+- **学习路线和作业只是个人建议，可以根据自己情况更改或者放弃，非强制**
 - **4.2.2中的7个问题中任选3个作为个人作业**
 - **请尽量在5个月的时间内完成必读内容和对应作业**
 - **请在本文最后，添加自己的名称和博客地址**
