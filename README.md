@@ -353,7 +353,7 @@ gazebo作为ROS中重要的仿真模拟环境，以其为基础的多机器人�
 - 要求:
   - 1. 按照[编码规范和docs](https://github.com/IRLSCU/uranus-core/blob/main/docs/contributor.md)进行个人分支创建和代码合并。
   - 2. 在本项目的各个problemX\solution 中创建以自姓名为缩写的文件夹。例如王鹏程，则创建文件夹wpc
-  - 3. 创建项目必须是完整的C++项目。包含cmake文件，并提供build、run、test三种shell脚本，实现快速运行。
+  - 3. 创建项目必须是完整的C++/Python项目。包含cmake文件，并提供build、run、test三种shell脚本，实现快速运行；以及相关说明文档。
   - 4. 项目中必须包含docs,文件和注释文档生成脚本`build_doc.sh`(可以使用cmake来配置)，快速生成代码文档，说明代码作用和API.
 - 任务目标：
   - 1. 熟悉Makefile/CMake相关编译套件
