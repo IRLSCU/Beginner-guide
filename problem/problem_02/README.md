@@ -5,12 +5,27 @@ C++实现类似nginx的简单负载均衡服务器，使用reactor或者Preactor
 
 下面是一些HTTP的相关参考；**请在项目文件夹中说明你的解决方案并进行性能测试**
 ## Unix Server 
-
+Linux 中提供了sock网络编程的对应API,但是对于外来开发人员而言，需要我们对接口进行封装，来处理连接方式；常用的网络通信和分发模型有:Reactor模式和Preator模式
+_参考链接:_
+- [两种web请求处理模式](https://wangpengcheng.github.io/2019/10/24/interview/#4-%E7%AE%80%E8%BF%B0%E4%B8%A4%E7%A7%8Dweb%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%A8%A1%E5%BC%8F)
 ## 线程池
+使用线程的方式，可以尽可能利用当代的多核CPU、但是线程的创建和销毁会占用较大的资源，因此常用的服务端程序中需要自定义线程池减小损耗。
+因此在高性能的HTTP服务器中，需要使用Reactor或者Preator模式进行进一步的性能提升。
 
+_参考链接:_
+- [C++线程池](https://wangpengcheng.github.io/2019/05/17/cplusplus_theadpool/)
 ## 内存池
+内存池（Memory Pool）是一种内存分配方式。通常我们习惯直接使用new、malloc等API申请内存，这样做的缺点在于所申请内存块的大小不定，当频繁使用时会造成大量的内存碎片并进而降低性能。内存池则是在真正使用内存之前，预先申请分配一定数量、大小相等（一般情况下）的内存块留作备用。当有新的内存需求时，就从内存池中分出一部分内存块，若内存块不够再继续申请新的内存。这样做的一个显著优点是，使得内存分配效率得到提升。
+经典的内存池使用管理过程如下:
 
+![内存池使用管理过程](https://img-blog.csdn.net/20181021235204288?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+
+在高性能HTTP服务器中，抽象化内存池管理结构，并重载对应关键对象的`new`操作符，实现内存管理
 ## HTTP 协议
+不做过多叙述;请实现HTTP1.0 关键功能，并**支持回调请求处理函数**
+_参考链接:_
+- [HTTP参考解析](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
 
 
 要求:
