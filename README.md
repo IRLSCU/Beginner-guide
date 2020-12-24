@@ -16,7 +16,7 @@ IRLSCU 是Indoor Robot Laboratory of Sichuan University；主要研究方向室�
 
 
 ### 2.1 书籍地址
-* [ ] [中文开源书籍](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-zh.md)
+* [ ] [中文开源书籍](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-zh.md)
 * [ ] [百度网盘书籍链接](https://pan.baidu.com/s/1MRXpmYiClNSdwXUALzWjsQ)；提取码:p6wr
 ### 2.2 计算机组成原理
 
