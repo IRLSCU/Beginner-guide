@@ -339,7 +339,7 @@ gazebo作为ROS中重要的仿真模拟环境，以其为基础的多机器人�
 
 [笔记模板](https://github.com/IRLSCU/Beginner-guide/blob/master/problem/problem_07/thesis_reading_template.md)
 
-#### 4.2.3 问题提交注意
+#### 4.2.3 作业提交注意
 
 - **学习路线和作业只是个人建议，可以根据自己情况更改或者放弃，非强制**
 - **4.2.2中的7个问题中任选3个作为个人作业**
