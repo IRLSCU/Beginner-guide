@@ -126,7 +126,7 @@ IRLSCU 是Indoor Robot Laboratory of Sichuan University；主要研究方向室�
 TODO
 ### 3.1 SLAM
 
-TODO
+[SLAM学习引导](https://github.com/IRLSCU/SLAM-guide)
 
 ### 3.2 机器人控制
 
